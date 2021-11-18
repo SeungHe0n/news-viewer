@@ -76,7 +76,6 @@ const Categories = () => {
                 <Category
                     key={c.name}
                     className={({ isActive }) => (isActive ? 'activated' : '')}
-                    // exact={c.name === 'all'}
                     to={c.name === 'all' ? '/' : `/${c.name}`}
                 >
                     {c.text}
