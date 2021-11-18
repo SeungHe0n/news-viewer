@@ -1,5 +1,3 @@
-## 소개
-
 해당 소스코드는  
 **리액트를 다루는 기술(개정판)** 의 **14장.외부 API를 연동하여 뉴스 뷰어 만들기**  
 에서 나오는 예제를 기반으로 합니다.
@@ -23,8 +21,9 @@ http://newsapi.org/ 에서 제공하는 API를 사용하여 뉴스 데이터를 
 -   `<NavLink>`의 `activeStyle`과 `activeClassName`이 사라짐
 -   `useHistory` 대신 `useNavigate` 사용
 
-## 작성하며 느낀 점
+## 느낀 점
 
 -   패키지의 버전별 차이에 유의할 것
 -   `<NavLink>`가 적용된 컴포넌트는 to를 설정하지 않으면 undefined 오류가 발생함
 -   `useEffect`에 등록하는 함수는 async로 작성하면 안되며, 그 대신 함수 내부에 async 함수를 따로 만들어줘야 함
+-   ESLint 경고가 나타날 때, 상황에 따라 ESLint 규칙을 비활성화하는 주석을 작성할 수 있음
